@@ -1,0 +1,137 @@
+.unitSwitcher {
+  background: gray;
+  border: none;
+  width: 4rem;
+  padding:0.5rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  width: 130px;
+  text-align: left;
+}
+
+
+/*
+Monterey 2015+  (droppped 2013 - 2014)
+Ventura 2018+ (dropped 2015-2017)
+macOS 14 2019+ ??? - last one
+*/
+
+.myc { /*155828*/
+  width: 60%;
+  margin-top: 50px;
+}
+.high {
+  background:#3498db;
+}
+
+.settingsTitle {
+  font-size: 2rem;
+  padding:1rem;
+}
+
+.blueBorder {
+    margin: 1em;
+    border-radius: 1em;
+    width: max(60%, 300px);
+    box-shadow: 0px 1px 10px 0px rgb(145 145 145);
+}
+
+.gray {
+  color: gray;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  margin: 2em;
+}
+
+.dataSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dataSection > h4 {
+  color: gray;
+}
+
+.distItem {
+  font-size: 2.33em;
+}
+
+.title {
+  /*font-size: 3.0em;*/
+   font-size: clamp(60px, 8vw, 80px);
+}
+
+.gray {
+  font-size: clamp(22px, 3vw, 32px);
+}
+
+.logoutButton {
+  border: none;
+  margin: 1em;
+  font-weight: bold;
+  font-size: clamp(18px, 3vw, 26px);
+  background: none;
+}
+
+
+/*23:23:52 Layout*/
+.date {
+  margin: 2em;
+  color: gray
+}
+
+#map {
+  display: block;
+  width: 100vw;
+  height: 700px;
+}
+
+
+.backButton {
+  border: none;
+  font-size: clamp(60px, 8vw, 77px);
+  padding: 0.5em;
+  background: none;
+}
+
+#backAlign {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+
+
+@media only screen and (max-device-width: 415px){
+  .myc { /*155828*/
+    width: 80%;
+  }
+}
+
+   /*
+
+table {
+ 
+  border-collapse: collapse;
+ 
+  
+}
+
+
+td, th {
+  width: 4em;
+  padding: 0.5em;
+  border: 1px solid greenyellow;
+}*/

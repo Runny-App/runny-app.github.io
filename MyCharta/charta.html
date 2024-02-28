@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<body>
+
+
+
+<div id="root"></div>
+<script>
+
+</script>
+
+
+
+
+
+<script type="text/babel">
+
+class ChartComponent extends React.Component {
+
+
+    constructor(props){
+        super();
+        this.props = props;
+        console.log(this.props.rates);
+    }
+
+
+    componentDidMount(){
+
+       // var xValues = this.props.rates.xValues.map(val => val.x); //[1, 3, 6, 8];
+
+
+new Chart("myChart", {
+  type: "line",
+  data: {
+    labels:[0,
+     this.props.rates.distance * 0.33,
+     this.props.rates.distance * 0.66,
+      this.props.rates.distance],
+    datasets: [{ 
+        data: this.props.rates.hrArr,
+     // data: [181, 182, 183, 189],
+      borderColor: "red",
+      fill: false
+    }]
+  },
+  options: {
+    legend: {display: false}
+  }
+});
+    }
+    render(){
+        return (/*<h1>Chart</h1>*/ <canvas class="hrChart" id="myChart"></canvas>);
+    }
+}
+
+let rates = {
+  distance: 18, // *0,25 
+    hrArr: [155, 158, 162, 161]
+}
+
+/*
+let rates = [
+    {x: 12, y: 122},
+     {x: 12, y:134},
+     {x:13, y: 234}
+];*/
+
+// hrArr: [Int]
+ReactDOM.render(<ChartComponent rates={rates}/>, document.querySelector("#root"));
+
+
+
+
+</script>

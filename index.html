@@ -1,2 +1,96 @@
-<h1>Runny</h1>
-  
+
+<meta charset="UTF-8"/>
+ <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+ <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+ <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----
+
+<style src="loginStyle.css"></style>
+---->
+
+
+<link rel="stylesheet" href="loginStyle.css"/>
+<script src="firebaseSetup.js"></script>
+<script type="text/babel" src="login.js"></script>
+<script>
+
+
+
+/*
+db.collection("users").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+    });
+*/
+
+
+// 170140
+
+let db = firebase.firestore();
+let ref = db.collection("Runs").get().then((snap) => {
+   
+    console.log(snap);
+
+   /* snap.forEach((doc) => {
+        console.log(doc.id);
+
+
+        let data = doc.data();
+        console.log(data);
+    });*/
+});
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<div id="root">A</div>

@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    /*use SF Pro Bold*/
+}
+
+
+
+
+#back {
+    position: absolute;
+    margin-top: 0;
+    width: 100vw;
+    /*height: 110%;*/
+     /* height: 100vh; */
+    background-image: url("images/first.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    width: 24em;
+    margin-left: calc(50vw - 12em);
+}
+
+
+.backWhite {
+        color: white;
+        font-size: 2em;
+        border: none;
+background: none;
+margin: 1em;
+    }
+    
+
+
+
+
+#login,
+h1 {
+    margin-top: 1em;
+}
+
+input {
+    padding: 1em;
+    width: 20em;
+    border: none;
+    margin: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+#loginb {
+    padding: 1em;
+    background: white;
+    color: #3498db;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+#loginb:hover {
+    transition: 0.6s;
+    background: #1abc9c;
+    color: white;
+    cursor: hand;
+}
+
+#toSignup {
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 2em;
+    background: none;
+}
+
+
+
+
+
+.invalidField {
+border: 2px solid #e74c3c;
+}
+
+.red {
+color: #e74c3c
+}
+
+.green {
+color: #2ecc71;
+}
+
+
+.emailError {
+background: #e74c3c;
+color: white;
+font-weight: bolder;
+padding: 0.5em;
+border-radius: 0.2em;
+}
+
+
+.largeForgot {
+font-size: 2em;
+margin-bottom: 1em;
+}
+
+.onePointFour {
+border: 1px solid gray;
+}
+
+
+.redBorder {
+border: 1px solid #e74c3c;
+}
+
+
+
+/*----------------------------------------FONT SIZES HERE--------------------------------------------*/
+
+/*-----------------------------------MOBILE DESIGN-----------------------------------*/
+
+@media (max-device-width: 415px) {
+
+    /*UP TO XS MAX (replace 70em)*/
+    h1 {
+        font-size: 5em;
+    }
+
+    #login {
+        font-size: 2em;
+    }
+    
+    .backWhite {
+        font-size: 5em;
+    }
+    
+    .okay {
+        font-size: 1.30em;
+    }
+
+    .forgotInstructions {
+    font-size: 2.1em;
+
+    }
+
+    .largeForgot {
+        font-size: 3em;
+    }
+
+    .red {
+        font-size: 2em;
+    }
+
+    .green {
+        font-size: 2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+}
+
+/* CHANGES ON RESIZE ADJUST BEHAVIOUR (HIDE UNDER HAMBURGER, ETC.)*/
+
+@media only screen and (max-width: 70em) {
+
+    /* h1 {
+color: blue;
+} */
+    #login {
+        width: 75vw;
+        margin-left: 12.5vw;
+    }
+
+    #login {
+        margin-top: 3em;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+
+#back {
+    position: absolute;
+    margin-top: 0;
+    width: 100vw;
+    height: 2000px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    width: 24em;
+    margin-left: calc(50vw - 12em);
+}
+
+#login,
+h1 {
+    margin-top: 3em;
+}
+
+input {
+    padding: 1em;
+    width: 20em;
+    border: none;
+    margin: 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+#loginb {
+    padding: 1em;
+    background: white;
+    color: #3498db;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+
+}
+
+.loginB {
+    padding: 1em;
+    background: white;
+    color: #3498db;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+}
+
+
+
+#toSignup {
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 2em;
+    background: none;
+}
+
+/*----------------------------------------FONT SIZES HERE--------------------------------------------*/
+
+/*-----------------------------------MOBILE DESIGN-----------------------------------*/
+
+@media (max-device-width: 415px) {
+
+    /*UP TO XS MAX (replace 70em)*/
+    h1 {
+        font-size: 5em;
+    }
+
+    #login {
+        font-size: 2em;
+    }
+
+    .loginB {
+        font-size: 2em;
+    }
+
+    .onePointFour {
+        font-size: 2em;
+    }
+}
+
+/* CHANGES ON RESIZE ADJUST BEHAVIOUR (HIDE UNDER HAMBURGER, ETC.)*/
+
+@media only screen and (max-width: 70em) {
+
+    /* h1 {
+color: blue;
+} */
+    #login {
+        width: 75vw;
+        margin-left: 12.5vw;
+    }
+
+    #login {
+        margin-top: 3em;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+}
+
